@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+section#first {
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+section#first .leftSide {
+  width: 30%;
+}
+section#first .leftSide h1 {
+  margin: 0;
+  color: rgb(63, 5, 63);
+  font-size: 70px;
+}
+section#first .leftSide p {
+  margin-top: 20px;
+  color: rgb(135, 151, 167);
+  font-size: 22px;
+}
+section#first .rightSide .ratingCard {
+  width: 70%;
+  background: lightgrey;
+  padding: 20px 35px;
+  margin-top: 20px;
+}
+section#first .rightSide .ratingCard:nth-child(2) {
+  margin-left: 70px;
+}
+section#first .rightSide .ratingCard:last-child {
+  margin-left: 140px;
+}
+section#first .rightSide .ratingCard span {
+  font-weight: 500;
+}
+section#first .rightSide .ratingCard span:last-child {
+  margin-left: 35px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+section#second {
+  width: 80%;
+  margin: auto;
+}
+section#second .card {
+  width: 24%;
+  background-color: rgb(63, 5, 63);
+  padding: 40px 40px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  float: left;
+  margin: 2%;
+}
+section#second .card .cardHeader {
+  display: flex;
+  align-items: center;
+  margin: 30px 0;
+}
+section#second .card .cardHeader h2 {
+  margin: 0;
+}
+section#second .card .cardHeader p {
+  font-weight: 500;
+  margin: 10px 0;
+  color: rgba(207, 14, 207, 0.8);
+}
+section#second .card img {
+  margin-right: 40px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+section#second .card p {
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+  section#second .card {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 768px) {
+  section#first .leftSide {
+    width: 40%;
+  }
+  section#first .rightSide {
+    width: 50;
+  }
+  section#first .rightSide .ratingCard:nth-child(2) {
+    margin-left: 40px;
+  }
+  section#first .rightSide .ratingCard:last-child {
+    margin-left: 80px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  section#first .leftSide h1 {
+    font-size: 50px;
+  }
+  section#second .card {
+    flex-direction: column;
+    width: 18%;
+    margin: 1%;
+  }
+  section#second .card .cardHeader {
+    display: flex;
+    flex-direction: column;
+  }
+  section#second .card .cardHeader h2 {
+    margin: 15px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  section#first {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+  }
+  section#first .leftSide {
+    width: 60%;
+    text-align: center;
+  }
+  section#first .leftSide h1 {
+    width: 80%;
+    margin: auto;
+  }
+  section#first .rightSide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section#first .rightSide .ratingCard {
+    width: 100%;
+    margin-top: 10px;
+  }
+  section#first .rightSide .ratingCard:nth-child(2) {
+    margin-left: 0;
+  }
+  section#first .rightSide .ratingCard:last-child {
+    margin-left: 0;
+  }
+  section#second {
+    display: flex;
+    flex-direction: column;
+  }
+  section#second .card {
+    width: 80%;
+    margin: 10px auto;
+    padding: 30px 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  section#first .rightSide .ratingCard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 55px;
+  }
+  section#first .rightSide .ratingCard span {
+    margin-top: 10px;
+  }
+  section#first .rightSide .ratingCard span:last-child {
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
